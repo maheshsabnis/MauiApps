@@ -4,7 +4,7 @@ namespace App_MVVM;
 public partial class MainPage : ContentPage
 {
 	
-	// The Comment
+	// The Comment Important
 	public MainPage(EmployeeViewModel vm)
 	{
 		InitializeComponent();
