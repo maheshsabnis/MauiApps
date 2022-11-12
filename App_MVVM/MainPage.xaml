@@ -1,39 +1,66 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="App_MVVM.MainPage">
+             x:Class="App_MVVM.MainPage"
+             xmlns:viewmodel="clr-namespace:App_MVVM.ViewModel"
+             xmlns:model="clr-namespace:App_MVVM.Models"
+             x:DataType="viewmodel:EmployeeViewModel">
 
     <ScrollView>
         <VerticalStackLayout
             Spacing="25"
             Padding="30,0"
             VerticalOptions="Center">
+            
+            <Label>EmpNo</Label>
+            <Entry Text="{Binding Employee.EmpNo}" x:Name="EmpNo" ></Entry>
+            <Label>EmpName</Label>
+            <Entry Text="{Binding Employee.EmpName}" x:Name="EmpName" Placeholder="Enter EmpName"></Entry>
+            <Label>DeptName</Label> 
+            <Entry Text="{Binding Employee.DeptName}" x:Name="DeptName" Placeholder="Enter DeptName"></Entry>
+            <Label>Designation</Label>
+            <Entry Text="{Binding Employee.Designation}" x:Name="Designation" Placeholder="Enter Designation"></Entry>
+            <Label>Salary In Rs</Label>
+            <Entry Text="{Binding Employee.Salary}" x:Name="Salary" ></Entry>
 
-            <Image
-                Source="dotnet_bot.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="200"
+              <Button
+                x:Name="btnAdd"
+                Text="Add Employee"
+                SemanticProperties.Hint="Click to Add Employee"
+                 Command="{Binding AddEmployeeCommand}"
                 HorizontalOptions="Center" />
-
-            <Label
-                Text="Hello, World!"
-                SemanticProperties.HeadingLevel="Level1"
-                FontSize="32"
-                HorizontalOptions="Center" />
-
-            <Label
-                Text="Welcome to .NET Multi-platform App UI"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                FontSize="18"
-                HorizontalOptions="Center" />
-
             <Button
-                x:Name="CounterBtn"
-                Text="Click me"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
+                x:Name="btnGetAll"
+                Text="Get Employees"
+                SemanticProperties.Hint="Click to Get All Employee"
+                 Command="{Binding GetEmployeesCommand}"
                 HorizontalOptions="Center" />
+
+             <ListView x:Name="lstEmpData"  
+                   VerticalScrollBarVisibility="Always"
+                  HorizontalScrollBarVisibility="Always"
+                   HeightRequest="300"
+                    ItemsSource="{Binding Employees}">
+            <ListView.ItemTemplate>
+                <DataTemplate x:DataType="{x:Type model:Employee}">
+
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="{Binding EmpNo}"  WidthRequest="80"/>
+                             <Label Text="{Binding EmpName}"  WidthRequest="300"/>
+                             <Label Text="{Binding Salary}"  WidthRequest="200"/>
+                             <Label Text="{Binding DeptName}"  WidthRequest="200"/>
+                             <Label Text="{Binding Designation}"  WidthRequest="200"/>     
+                        </StackLayout>
+                          
+                          
+                    </ViewCell>
+
+                </DataTemplate>
+
+            </ListView.ItemTemplate>
+
+        </ListView>
 
         </VerticalStackLayout>
     </ScrollView>
