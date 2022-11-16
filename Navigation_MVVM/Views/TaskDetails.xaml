@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Navigation_MVVM.Views.TaskDetails"
+             Title="TaskDetails"
+              xmlns:viewmodel="clr-namespace:Navigation_MVVM.ViewModels"
+             xmlns:model="clr-namespace:Navigation_MVVM.Models"
+             x:DataType="viewmodel:TaskDetailsViewModel">
+    <VerticalStackLayout>
+       
+        <Grid x:DataType="model:JobTask" BindingContext="{Binding}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="80" />
+                <RowDefinition Height="80" />
+                <RowDefinition Height="80" />
+                <RowDefinition Height="80" />
+                <RowDefinition Height="80" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0" Grid.Column="0">Task Id</Label>
+            <Entry x:Name="TaskId" Text="{Binding TaskId}" Grid.Row="0" Grid.Column="1"></Entry>
+            <Label Grid.Row="1" Grid.Column="0">Task Name</Label>
+            <Entry x:Name="TaskName" Text="{Binding TaskName}" Grid.Row="1" Grid.Column="1"></Entry>
+            <Label Grid.Row="2" Grid.Column="0">Details</Label>
+            <Entry x:Name="Details" Text="{Binding Details}" Grid.Row="2" Grid.Column="1"></Entry>
+            <Label Grid.Row="3" Grid.Column="0">Assign To</Label>
+            <Entry x:Name="AssignTo" Text="{Binding AssignTo}" Grid.Row="3" Grid.Column="1"></Entry>
+            <Label Grid.Row="4" Grid.Column="0">Task Assign Date</Label>
+            <Entry x:Name="TaskAssignDate" Text="{Binding TaskAssignDate}" Grid.Row="4" Grid.Column="1"></Entry>
+        </Grid>
+        <Button Text="Go Back" FontSize="Medium" Command="{Binding GoBackCommand}"/>
+    </VerticalStackLayout>
+</ContentPage>
