@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUI_OpenBrowser.MainPage"
+             Loaded="ContentPage_Loaded">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+            <Label
+                Text="MAUI Opening the Browser"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="MAUI Opening the Browser"
+                FontSize="18"
+                HorizontalOptions="Center" />
+
+            <ListView x:Name="lstUrls">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding SiteName}"></Label>
+                                <Label Text="{Binding Url}"></Label>
+                            </StackLayout>
+                        </ViewCell>    
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>   
+            
+            <Button
+                x:Name="btnOpenBrowser"
+                Text="Open In Browser"
+                SemanticProperties.Hint="Open the URL in the Browser"
+                Clicked="btnOpenBrowser_Clicked"
+                HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
