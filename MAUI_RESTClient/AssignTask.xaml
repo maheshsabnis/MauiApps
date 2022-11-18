@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUI_RESTClient.AssignTask"
+             xmlns:page="clr-namespace:MAUI_RESTClient"
+             xmlns:model="clr-namespace:MAUI_RESTClient.Models"
+             Title="AssignTask">
+    <VerticalStackLayout>
+        <Label 
+            Text="Assign New Task"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Grid x:DataType="page:AssignTask">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"></RowDefinition>
+                <RowDefinition Height="100"></RowDefinition>
+                <RowDefinition Height="100"></RowDefinition>
+                <RowDefinition Height="100"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" Text="Task Id"></Label>
+            <Entry x:Name="TaskId" Grid.Row="0" Grid.Column="1" Text="{Binding Task.TaskId, Mode=TwoWay}"></Entry>
+            <Label Grid.Row="1" Grid.Column="0" Text="Task Name"></Label>
+            <Entry x:Name="TaskName" Grid.Row="1" Grid.Column="1" Text="{Binding Task.TaskName, Mode=TwoWay}"></Entry>
+            <Label Grid.Row="2" Grid.Column="0" Text="Assign To"></Label>
+            <Entry x:Name="AssignTo" Grid.Row="2" Grid.Column="1" Text="{Binding Task.AssignTo, Mode=TwoWay}"></Entry>
+            <Label Grid.Row="3" Grid.Column="0" Text="Assign Date"></Label>
+            <DatePicker Grid.Row="3" Grid.Column="1" MinimumDate="01/01/2022" MaximumDate="12/31/2023" Date="{Binding Task.AssignDate, Mode=TwoWay}" />
+        </Grid>
+        <Button Text="Assign Task" x:Name="btnAssignTask" Clicked="btnAssignTask_Clicked"></Button>
+    </VerticalStackLayout>
+</ContentPage>

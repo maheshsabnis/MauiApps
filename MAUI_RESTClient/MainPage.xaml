@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUI_RESTClient.MainPage" Loaded="ContentPage_Loaded"
+             xmlns:model="clr-namespace:MAUI_RESTClient.Models">
+
+    <ScrollView>
+        <VerticalStackLayout
+            >
+            <!--<Button Text="Get Weather Forecase Data" x:Name="btnGetData" Clicked="btnGetData_Clicked"></Button>
+            <ListView x:Name="lstViewInfo"
+                      VerticalScrollBarVisibility="Always"
+                  HorizontalScrollBarVisibility="Always"
+                    ItemsSource="{Binding WeatherForecastData}" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding Date}"  WidthRequest="200"/>
+                                <Label Text="{Binding TemperatureC}"  WidthRequest="200"/>
+                                <Label Text="{Binding TemperatureF}"  WidthRequest="200"/>
+                                <Label Text="{Binding Summary}"  WidthRequest="200"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                
+            </ListView>-->
+
+            <Button Text="Get Tasks" x:Name="btnGetTasks" Clicked="btnGetTasks_Clicked"></Button>
+            <ListView x:Name="lstViewInfo"
+                      VerticalScrollBarVisibility="Always"
+                  HorizontalScrollBarVisibility="Always"
+                    ItemsSource="{Binding Tasks}" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding TaskId}"  WidthRequest="200"/>
+                                <Label Text="{Binding TaskName}"  WidthRequest="200"/>
+                                <Label Text="{Binding AssignTo}"  WidthRequest="200"/>
+                                <Label Text="{Binding AssignDate}"  WidthRequest="200"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Button Text="Assign Task" x:Name="btnAssignNewTasks" Clicked="btnAssignNewTasks_Clicked"></Button>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
