@@ -26,9 +26,9 @@
             <Label Grid.Row="1" Grid.Column="0" Text="Task Name"></Label>
             <Entry x:Name="TaskName" Grid.Row="1" Grid.Column="1" Text="{Binding Task.TaskName, Mode=TwoWay}"></Entry>
             <Label Grid.Row="2" Grid.Column="0" Text="Assign To"></Label>
-            <Entry x:Name="AssignTo" Grid.Row="2" Grid.Column="1" Text="{Binding Task.AssignTo, Mode=TwoWay}"></Entry>
+            <Entry x:Name="AssignTo" Grid.Row="2" Grid.Column="1" Text="{Binding Task.AssignedTo, Mode=TwoWay}"></Entry>
             <Label Grid.Row="3" Grid.Column="0" Text="Assign Date"></Label>
-            <DatePicker Grid.Row="3" Grid.Column="1" MinimumDate="01/01/2022" MaximumDate="12/31/2023" Date="{Binding Task.AssignDate, Mode=TwoWay}" />
+            <DatePicker Grid.Row="3" Grid.Column="1" MinimumDate="01/01/2022" MaximumDate="12/31/2023" Date="{Binding Task.AssignedDate, Mode=TwoWay}" />
         </Grid>
         <Button Text="Assign Task" x:Name="btnAssignTask" Clicked="btnAssignTask_Clicked"></Button>
     </VerticalStackLayout>

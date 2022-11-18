@@ -1,6 +1,9 @@
-﻿namespace MAUI_RESTClient.Models
+﻿using System;
+using System.Collections.Generic;
+
+namespace DataService.Models
 {
-    public class JobTasks
+    public partial class JobTask
     {
         public int TaskId { get; set; }
         public string TaskName { get; set; } = null!;

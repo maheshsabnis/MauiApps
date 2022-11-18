@@ -1,7 +1,13 @@
+using DataService.Models;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
+builder.Services.AddDbContext<TasksContext>(options => 
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("AppString"));
+});
 builder.Services.AddControllers()
         .AddJsonOptions(options => 
         {
