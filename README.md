@@ -18,9 +18,14 @@ Project Name: CollectionView
 
 Project Name: MAUI_APpActions
   - The App Actions are the feature that provides a shortcut to perform operations proir to load the actual application.
+  - You have to make sure that the following line must be added in MainActivity.cs file of Platforms\Android\Resources folder
+```` csharp
+ [IntentFilter(new[] { Platform.Intent.ActionAppAction }, Categories = new[] { Android.Content.Intent.CategoryDefault })]
+````
   - The following image shows how App Actions will be accesses
   - ![alt text](https://github.com/maheshsabnis/MauiApps/blob/main/appactions.png?raw=true) 
   - When the applciation icon is kept pressed for some time the AppActions will be shown
   - You can select an action from AppActions and the view associated with it will be shown.
+  
   
  Project Name:  
