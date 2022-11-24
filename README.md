@@ -15,4 +15,6 @@ Project Name: CollectionView
 
 
 Project Name: MAUI_APpActions
-  - The App Actions are the feature that provides a shortcut to perform operations proir to load the actual application
+  - The App Actions are the feature that provides a shortcut to perform operations proir to load the actual application.
+  - The following image shows how App Actions will be accesses
+  - ![alt text](https://github.com/maheshsabnis/MauiApps/blob/main/appactions.png?raw=true) 
