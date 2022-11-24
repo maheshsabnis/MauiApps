@@ -12,7 +12,8 @@ Project Name: CollectionView
   - You need to make sure that, all images those are shown in CollectionView are added in Resources\images folder.
   - Make sure that each image file is having extension '.png'.
   - Make sure that for eacg image the Build Action is 'MauiImage'.
-  - The output of the collection view will be displayed as per the folowing image
+  - The output of the collection view will be displayed as per the following image
+  - - ![alt text](https://github.com/maheshsabnis/MauiApps/blob/main/collectionview.png?raw=true) 
 
 
 Project Name: MAUI_APpActions
