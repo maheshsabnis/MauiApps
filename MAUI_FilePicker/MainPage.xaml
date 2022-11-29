@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUI_FilePicker.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+          
+
+            <Label
+                Text="Show The Selected Image"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center" />
+
+            <Image
+                x:Name="imgSrc"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+            <Button
+                x:Name="btnPickImage"
+                Text="Pick The Image"
+                SemanticProperties.Hint="Pick the Image Using "
+                Clicked="btnPickImage_Clicked"
+                HorizontalOptions="Center" />
+
+
+            <Button
+                x:Name="btnPickMultiplrImage"
+                Text="Pick Multiple Image"
+                SemanticProperties.Hint="Pick Multiple Images Image Using "
+                Clicked="btnPickMultiplrImage_Clicked"
+                HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
