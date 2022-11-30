@@ -15,9 +15,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataService", "DataService\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MAUI_RESTClient", "MAUI_RESTClient\MAUI_RESTClient.csproj", "{EDCABF07-7F23-4620-83F1-E9F585BC21CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MAUI_OpenBrowser", "MAUI_OpenBrowser\MAUI_OpenBrowser.csproj", "{49BF84A4-AE51-400D-8DA1-AFB23B0CE8F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MAUI_OpenBrowser", "MAUI_OpenBrowser\MAUI_OpenBrowser.csproj", "{49BF84A4-AE51-400D-8DA1-AFB23B0CE8F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MAUI_FilePicker", "MAUI_FilePicker\MAUI_FilePicker.csproj", "{48E31E8C-2B99-4DB2-BB77-D619EA2EBE1A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MAUI_FilePicker", "MAUI_FilePicker\MAUI_FilePicker.csproj", "{48E31E8C-2B99-4DB2-BB77-D619EA2EBE1A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MAUI_MediaPicker", "MAUI_MediaPicker\MAUI_MediaPicker.csproj", "{94E3545E-9219-4DF3-9B5B-BF7B72A16D56}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MAUI_Connetivity", "MAUI_Connetivity\MAUI_Connetivity.csproj", "{108A8537-7DCF-4EE1-97A6-ECDF760D2260}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MAUI_Contacts", "MAUI_Contacts\MAUI_Contacts.csproj", "{6A774047-B355-4F33-8C96-5770B380D10F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,6 +77,24 @@ Global
 		{48E31E8C-2B99-4DB2-BB77-D619EA2EBE1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{48E31E8C-2B99-4DB2-BB77-D619EA2EBE1A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{48E31E8C-2B99-4DB2-BB77-D619EA2EBE1A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{94E3545E-9219-4DF3-9B5B-BF7B72A16D56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94E3545E-9219-4DF3-9B5B-BF7B72A16D56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94E3545E-9219-4DF3-9B5B-BF7B72A16D56}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{94E3545E-9219-4DF3-9B5B-BF7B72A16D56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94E3545E-9219-4DF3-9B5B-BF7B72A16D56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94E3545E-9219-4DF3-9B5B-BF7B72A16D56}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{108A8537-7DCF-4EE1-97A6-ECDF760D2260}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{108A8537-7DCF-4EE1-97A6-ECDF760D2260}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{108A8537-7DCF-4EE1-97A6-ECDF760D2260}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{108A8537-7DCF-4EE1-97A6-ECDF760D2260}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{108A8537-7DCF-4EE1-97A6-ECDF760D2260}.Release|Any CPU.Build.0 = Release|Any CPU
+		{108A8537-7DCF-4EE1-97A6-ECDF760D2260}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{6A774047-B355-4F33-8C96-5770B380D10F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A774047-B355-4F33-8C96-5770B380D10F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A774047-B355-4F33-8C96-5770B380D10F}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{6A774047-B355-4F33-8C96-5770B380D10F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A774047-B355-4F33-8C96-5770B380D10F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A774047-B355-4F33-8C96-5770B380D10F}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
