@@ -4,10 +4,29 @@ namespace MAUI_Contacts
 {
     public partial class MainPage : ContentPage
     {
+        private PhoneContact phoneContact;
+
         public MainPage()
         {
             InitializeComponent();
+            PhoneContact = new PhoneContact();
+            this.BindingContext = PhoneContact;
         }
+
+        public PhoneContact PhoneContact
+        { 
+            get 
+            {
+                return phoneContact; 
+            } 
+            set 
+            { 
+                phoneContact= value; 
+                OnPropertyChanged(nameof(PhoneContact));    
+            } 
+        }
+
+
         private async void btnGetSingleContact_Clicked(object sender, EventArgs e)
         {
             try
@@ -32,6 +51,18 @@ namespace MAUI_Contacts
                     string displayName = contact.DisplayName;
                     List<ContactPhone> phones = contact.Phones; // List of phone numbers
                     List<ContactEmail> emails = contact.Emails; // List of email addresses
+
+                    PhoneContact.ContactId = contact.Id;
+                    PhoneContact.NamePrefix= contact.NamePrefix;
+                    PhoneContact.GivenName= contact.GivenName;    
+                    PhoneContact.MiddleName = contact.MiddleName;
+                    PhoneContact.FamilyName= contact.FamilyName;
+                    PhoneContact.NameSuffix= contact.NameSuffix;    
+                    PhoneContact.DisplayName= contact.DisplayName;
+                    PhoneContact.Phones = contact.Phones;
+                    PhoneContact.Emails = contact.Emails;
+
+
                 }
                 else
                 {

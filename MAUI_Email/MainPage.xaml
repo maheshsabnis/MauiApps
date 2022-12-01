@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MAUI_Email"
+             x:Class="MAUI_Email.MainPage"
+             x:DataType="{x:Type local:MainPage}"
+             >
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+            <Label
+                Text="Sending The Email"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center" />
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Label Grid.Column="0" Grid.Row="0">Mail To:</Label>
+                <Entry Grid.Column="1" Grid.Row="0" Text="{Binding EmailReceiver.Receiver}"></Entry>
+                <Label Grid.Column="0" Grid.Row="1">Subject:</Label>
+                <Entry Grid.Column="2" Grid.Row="1" Text="{Binding EmailReceiver.Subject}"></Entry>
+                <Label Grid.Column="0" Grid.Row="2">Body:</Label>
+                <Editor Grid.Column="3" Grid.Row="2" Text="{Binding EmailReceiver.Body}"  HeightRequest="250"
+                         WidthRequest="250"></Editor>
+                <Button
+                x:Name="btrnSendEmail"
+                Text="Send Email"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="btrnSendEmail_Clicked"
+                 Grid.Column="0" Grid.Row="3"    
+                HorizontalOptions="Center" />
+
+                <Button
+                x:Name="btnSendMailWithAttachment"
+                Text="Send Email with Attachment"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="btnSendMailWithAttachment_Clicked"
+                 Grid.Column="1" Grid.Row="3"    
+                HorizontalOptions="Center" />
+            </Grid>
+            
+            
+          
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

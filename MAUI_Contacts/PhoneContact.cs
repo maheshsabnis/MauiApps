@@ -10,14 +10,17 @@ namespace MAUI_Contacts
     public class PhoneContact : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
+        public int Id { get; set; } = 0;
+        public string ContactId { get; set; } = "DDD";
+        public string NamePrefix { get; set; } =string.Empty;
+        public string GivenName { get; set; } = string.Empty;
+        public string MiddleName { get; set; } = string.Empty;
+        public string FamilyName { get; set; } = string.Empty;
 
-        public string ContactId { get; set; }
-        public string NamePrefix { get; set; }
-        public string GiventName { get; set; }
-        public string MiddleName { get; set; }
-        public string FamilyName { get; set; }
-        public string NameSuffix { get; set; }
-        public string DisplayName { get; set; }
+        public string NameSuffix { get; set; } = string.Empty;
+        public string DisplayName { get; set; } = string.Empty;
+        public List<ContactPhone>? Phones { get; set; } 
+        public List<ContactEmail>? Emails { get; set; }
 
         void OnPropertyChanged(string pName)
         {
