@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MAUI_Custom_List.Controls"
+             x:Class="MAUI_Custom_List.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Label
+                Text="Using The Custom Control"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center" />
+
+            <local:SimpleRatingControl Amount="5"
+                                      CurrentValue="1"
+                                      AccentColor="Cyan"
+                                      StarSize="36" />
+
+            <local:SimpleRatingControl Amount="7"
+                                      CurrentValue="6.7"
+                                      AccentColor="DarkGray"
+                                      StarSize="36" />
+
+            <local:SimpleRatingControl Amount="10"
+                                      CurrentValue="7.5"
+                                      AccentColor="DarkKhaki"
+                                      StarSize="36" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

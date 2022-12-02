@@ -82,8 +82,8 @@ namespace MAUI_SMSApp
 
                     if (Sms.Default.IsComposeSupported)
                     {
-                        string[] recipients = new[] { };
-                        string text = "Hello, I'm interested in buying your vase.";
+                        //string[] recipients = new[] { };
+                        //string text = "Hello, I'm interested in buying your vase.";
                         SMSModel.RecipantContact = phones[0].PhoneNumber;
 
                         var message = new SmsMessage(SMSModel.Text, SMSModel.RecipantContact);
