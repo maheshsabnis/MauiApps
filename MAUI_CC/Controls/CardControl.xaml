@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUI_CC.Controls.CardControl">
+    <!--Stp 2: Adding Control Template-->
+    <ContentView.ControlTemplate>
+        <ControlTemplate>
+            <!--The Step 2 Adding FRame-->
+            <Frame>
+                <!--The Step 1-->
+                <VerticalStackLayout>
+                    <!--In Step 1 The x:Name was used and it is removed-->
+                    <!--<Label 
+             x:Name="TitleLabel"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" BackgroundColor="Red" />-->
+
+                    <Label Text="{TemplateBinding Title}" />
+
+                    <!--STep 2 Adding COntent Presenter-->
+                    <ContentPresenter/>
+                </VerticalStackLayout>
+                <!--The Step 1 without FRame-->
+            </Frame>
+            <!--Step 2 Adding FRame-->
+        </ControlTemplate>
+    </ContentView.ControlTemplate>
+   
+</ContentView>

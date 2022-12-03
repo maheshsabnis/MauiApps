@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:MAUI_CC.Controls"
+             x:Class="MAUI_CC.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+            <!--THe Following is used when the Custome COntrol have not used the COntrol Template and 
+              Frame
+            -->
+            <!--<controls:CardControl Title="Hello MUI From Mahesh Sabnis"/>
+
+            <controls:CardControl Title="Hello MUI From Tejas Sabnis"/>-->
+
+            <!--
+              THe Following is used hrn the Custom COntrol uses the Control Template and Frame
+            -->
+            <controls:CardControl Title="Hello MUI From Mahesh Sabnis">
+                <VerticalStackLayout>
+                    <Label Text="Hello"></Label>
+                    <Label Text="World"></Label>
+                </VerticalStackLayout>
+            </controls:CardControl>
+
+            <controls:CardControl Title="Hello MUI From Tejas Sabnis">
+                <HorizontalStackLayout>
+                    <Label Text="Hello" FontSize="Large"></Label>
+                    <Label Text="New World" FontSize="Large"></Label>
+                </HorizontalStackLayout>
+            </controls:CardControl>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
