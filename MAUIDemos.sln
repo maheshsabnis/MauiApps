@@ -41,11 +41,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShoppingList", "ShoppingLis
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MAUI_CC", "MAUI_CC\MAUI_CC.csproj", "{861F79A2-1326-491C-AB23-21E5592F4263}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MAUI_BasicBinding", "MAUI_BasicBinding\MAUI_BasicBinding.csproj", "{CDE2BFCF-8BD9-451D-8258-0941C8E02D40}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MAUI_BasicBinding", "MAUI_BasicBinding\MAUI_BasicBinding.csproj", "{CDE2BFCF-8BD9-451D-8258-0941C8E02D40}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MAUI_StringFormatting", "MAUI_StringFormatting\MAUI_StringFormatting.csproj", "{37B3A9DD-4300-4D93-8B41-601542BEB90F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MAUI_StringFormatting", "MAUI_StringFormatting\MAUI_StringFormatting.csproj", "{37B3A9DD-4300-4D93-8B41-601542BEB90F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MAUI_Binding_Converters", "MAUI_Binding_Converters\MAUI_Binding_Converters.csproj", "{BBC6B29F-1A1F-41C4-BD8F-FBFCA1AD8CD4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MAUI_Binding_Converters", "MAUI_Binding_Converters\MAUI_Binding_Converters.csproj", "{BBC6B29F-1A1F-41C4-BD8F-FBFCA1AD8CD4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MAUI_Secure_Storage", "MAUI_Secure_Storage\MAUI_Secure_Storage.csproj", "{02207931-F840-4D23-A932-D89C91CE22BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MAUI_Preferences_Storage", "MAUI_Preferences_Storage\MAUI_Preferences_Storage.csproj", "{F689C009-A8CA-4EF3-AEB4-216A0903FAD6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -181,6 +185,18 @@ Global
 		{BBC6B29F-1A1F-41C4-BD8F-FBFCA1AD8CD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BBC6B29F-1A1F-41C4-BD8F-FBFCA1AD8CD4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BBC6B29F-1A1F-41C4-BD8F-FBFCA1AD8CD4}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{02207931-F840-4D23-A932-D89C91CE22BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02207931-F840-4D23-A932-D89C91CE22BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02207931-F840-4D23-A932-D89C91CE22BE}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{02207931-F840-4D23-A932-D89C91CE22BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02207931-F840-4D23-A932-D89C91CE22BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02207931-F840-4D23-A932-D89C91CE22BE}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{F689C009-A8CA-4EF3-AEB4-216A0903FAD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F689C009-A8CA-4EF3-AEB4-216A0903FAD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F689C009-A8CA-4EF3-AEB4-216A0903FAD6}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F689C009-A8CA-4EF3-AEB4-216A0903FAD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F689C009-A8CA-4EF3-AEB4-216A0903FAD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F689C009-A8CA-4EF3-AEB4-216A0903FAD6}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

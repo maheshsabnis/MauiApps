@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUI_Secure_Storage.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            
+            <Label
+                Text="Using The Secure Storage"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center" />
+
+            <Entry Placeholder="Enter the Secret Key" x:Name="saveSecretKey"/>
+            <Button Text="Save Secret Key" x:Name="btnSaveSecretKey" Clicked="btnSaveSecretKey_Clicked"></Button>
+
+            <Entry Placeholder="Access the Secret Key" x:Name="accessSecretKey"/>
+            <Button Text="Access Secret Key" x:Name="btnAccessSecretKey" Clicked="btnAccessSecretKey_Clicked"></Button>
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUI_Preferences_Storage.MainPage"
+             xmlns:local="clr-namespace:MAUI_Preferences_Storage"
+              Loaded="ContentPage_Loaded"
+             x:DataType="local:MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            
+
+            <Label
+                Text="Using Preferences"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center" />
+            <Label Text="Can Data be Saved?" FontSize="Body" TextColor="Blue"></Label>
+            <Switch IsToggled="{Binding CanSaveData}" HeightRequest="150" WidthRequest="160"/>
+
+            <Button
+                x:Name="btnSavePreferences"
+                Text="Save Preferences"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="btnSavePreferences_Clicked"
+                HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
