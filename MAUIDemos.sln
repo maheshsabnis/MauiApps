@@ -37,9 +37,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MAUI_Compnents", "MAUI_Comp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MauiLib1", "MauiLib1\MauiLib1.csproj", "{497591FA-EE01-49C4-B9E5-88F13835D562}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoppingList", "ShoppingList\ShoppingList.csproj", "{FC05AF0E-6674-4907-9CF7-FA4C91A80EA9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShoppingList", "ShoppingList\ShoppingList.csproj", "{FC05AF0E-6674-4907-9CF7-FA4C91A80EA9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MAUI_CC", "MAUI_CC\MAUI_CC.csproj", "{861F79A2-1326-491C-AB23-21E5592F4263}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MAUI_CC", "MAUI_CC\MAUI_CC.csproj", "{861F79A2-1326-491C-AB23-21E5592F4263}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MAUI_BasicBinding", "MAUI_BasicBinding\MAUI_BasicBinding.csproj", "{CDE2BFCF-8BD9-451D-8258-0941C8E02D40}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -157,6 +159,12 @@ Global
 		{861F79A2-1326-491C-AB23-21E5592F4263}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{861F79A2-1326-491C-AB23-21E5592F4263}.Release|Any CPU.Build.0 = Release|Any CPU
 		{861F79A2-1326-491C-AB23-21E5592F4263}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{CDE2BFCF-8BD9-451D-8258-0941C8E02D40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDE2BFCF-8BD9-451D-8258-0941C8E02D40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDE2BFCF-8BD9-451D-8258-0941C8E02D40}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{CDE2BFCF-8BD9-451D-8258-0941C8E02D40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDE2BFCF-8BD9-451D-8258-0941C8E02D40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDE2BFCF-8BD9-451D-8258-0941C8E02D40}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
