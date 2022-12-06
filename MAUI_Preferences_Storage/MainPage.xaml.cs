@@ -35,5 +35,10 @@
             OnPropertyChanged(nameof(CanSaveData));
 
         }
+
+        private async void btnLoadPersonalInfo_Clicked(object sender, EventArgs e)
+        {
+            await Shell.Current.GoToAsync(nameof(PersonalInfo));
+        }
     }
 }
