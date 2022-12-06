@@ -23,28 +23,20 @@ public partial class LoginUser : ContentPage
     {
 		try
 		{
-            //client = new HttpClient();
+            client = new HttpClient();
 
-            //var response = await client.PostAsJsonAsync<AuthenticateUser>($"{APIBaseAddress}/api/Auth/login", authUser);
+            var response = await client.PostAsJsonAsync<AuthenticateUser>($"{APIBaseAddress}/api/Auth/login", authUser);
 
-            //if (response.IsSuccessStatusCode)
-            //{
-            //    await DisplayAlert("Message", "User is LoggedIn Successfully", "Close");
+            if (response.IsSuccessStatusCode)
+            {
+                await DisplayAlert("Message", "User is LoggedIn Successfully", "Close");
 
-            //    secureResponse = await response.Content.ReadFromJsonAsync<SecureResponse>();
+                secureResponse = await response.Content.ReadFromJsonAsync<SecureResponse>();
 
-            //    await DisplayAlert("Token", secureResponse.Token, "Close");
-            //}
+                await DisplayAlert("Token", secureResponse.Token, "Close");
+            }
 
-            WebAuthenticatorResult authResult = await WebAuthenticator.Default.AuthenticateAsync(
-        new WebAuthenticatorOptions()
-        {
-            Url = new Uri($"{APIBaseAddress}/api/Auth/login"),
-            CallbackUrl = new Uri("myapp://"),
-            PrefersEphemeralWebBrowserSession = true
-        });
 
-            string accessToken = authResult?.AccessToken;
         }
 		catch (Exception ex)
 		{
