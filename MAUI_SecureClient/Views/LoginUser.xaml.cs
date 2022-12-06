@@ -34,7 +34,7 @@ public partial class LoginUser : ContentPage
                 secureResponse = await response.Content.ReadFromJsonAsync<SecureResponse>();
 
                 await DisplayAlert("Token", secureResponse.Token, "Close");
-            }
+            }   
 
 
         }
