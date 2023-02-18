@@ -24,7 +24,7 @@ public partial class LoginUser : ContentPage
 		try
 		{
             client = new HttpClient();
-
+            
             var response = await client.PostAsJsonAsync<AuthenticateUser>($"{APIBaseAddress}/api/Auth/login", authUser);
 
             if (response.IsSuccessStatusCode)

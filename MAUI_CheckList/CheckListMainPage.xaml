@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUI_CheckList.CheckListMainPage"
+             xmlns:self="clr-namespace:MAUI_CheckList"
+             Title="CheckListMainPage"
+              xmlns:local="clr-namespace:MAUI_CheckList.Models"
+              xmlns:converter="clr-namespace:MAUI_CheckList.Converters"
+             xmlns:controls="clr-namespace:MAUI_CheckList.CustomControls"
+               
+             >
+    <ContentPage.Resources>
+        <converter:CanVoteConverter x:Key="voteConvert"/>
+    </ContentPage.Resources>
+    <ScrollView>
+    <VerticalStackLayout>
+            <Label>The Custom List Control</Label>
+
+            <Button x:Name="btn" Clicked="btn_Clicked" Text="Add Emp"/>
+            <controls:CheckList
+            Items="{Binding employees}" TextValue="{Binding EmpName}" 
+            >
+            <controls:CheckList.IsChecked>
+                <MultiBinding Converter="{StaticResource voteConvert}" FallbackValue="false">
+                    <Binding Path="Age"/>
+                </MultiBinding>
+            </controls:CheckList.IsChecked>
+
+        </controls:CheckList>
+    </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

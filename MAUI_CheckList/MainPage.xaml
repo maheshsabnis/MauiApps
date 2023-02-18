@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MAUI_CheckList.Models"
+             xmlns:converter="clr-namespace:MAUI_CheckList.Converters"
+             xmlns:controls="clr-namespace:MAUI_CheckList.CustomControls"
+             x:Class="MAUI_CheckList.MainPage"
+             >
+    <ContentPage.BindingContext>
+        <local:Persons/>
+    </ContentPage.BindingContext>
+    <ContentPage.Resources>
+        <converter:CanVoteConverter x:Key="voteConvert"/>
+    </ContentPage.Resources>
+    <ScrollView>
+        
+        <ListView ItemsSource="{Binding}">
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <HorizontalStackLayout>
+                            <Label Text="{Binding PersonName}"/>
+                            <CheckBox HorizontalOptions="End">
+                                <CheckBox.IsChecked>
+                                    <MultiBinding Converter="{StaticResource voteConvert}" FallbackValue="false">
+                                        <Binding Path="Age"/>
+                                    </MultiBinding>
+                                </CheckBox.IsChecked>
+                            </CheckBox>
+                        </HorizontalStackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+      
+    </ScrollView>
+
+</ContentPage>
