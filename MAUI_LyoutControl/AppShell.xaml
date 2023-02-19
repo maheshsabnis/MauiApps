@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MAUI_LyoutControl.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MAUI_LyoutControl"
+    Shell.FlyoutBehavior="Flyout"   >
+
+    <!--<ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage_Flyout"
+        Route="MainPage" />-->
+
+    <FlyoutItem Title="Cats"
+                Icon="cat.png" >
+        <Tab>
+            <ShellContent  ContentTemplate="{DataTemplate local:MainPage_Flyout}"/>
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="Dogs"
+                Icon="dog.png">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate local:MainPage}"/>
+        </Tab>
+    </FlyoutItem>
+
+</Shell>

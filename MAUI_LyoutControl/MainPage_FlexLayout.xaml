@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUI_LyoutControl.MainPage_FlexLayout"
+             Title="MainPage_FlexLayout">
+    <!--A FlexLayout is a control for stacking or wrapping a collection of child controls. When stacking the items, you can specify Direction, JustifyContent, AlignItems, and Wrap. -->
+
+    <!--FlexLayout: JustifyContent="Start|Center|End|SpaceAround|SpaceBetween|SpaceEvenly" 
+    Direction="ColumnReverse|RowReverse|Column"
+    
+    Wrap="NoWrap"|"Wrap"|"Reverse"
+    -->
+
+    <!--<FlexLayout JustifyContent="Start" AlignContent="Start"
+                 Direction="Column">
+        <Label Text="FlexLayout" 
+                    TextColor="White" 
+                    Background="Red" />
+        <Label Text="FlexLayout" 
+                    TextColor="White" 
+                    Background="Green" />
+        <Label Text="FlexLayout" 
+                    TextColor="White" 
+                    Background="Blue" />
+    </FlexLayout>-->
+    
+    
+    <!--USing Wrap-->
+    <FlexLayout Wrap="Reverse" WidthRequest="300">
+        <Label Text="FlexLayout" 
+                    TextColor="White" 
+                    Background="Red" />
+        <Label Text="FlexLayout" 
+                    TextColor="White" 
+                    Background="Green" />
+        <Label Text="FlexLayout" 
+                    TextColor="White" 
+                    Background="Blue" />
+        <Label Text="FlexLayout" 
+                    TextColor="White" 
+                    Background="Red" />
+        <Label Text="FlexLayout" 
+                    TextColor="White" 
+                    Background="Green" />
+        <Label Text="FlexLayout" 
+                    TextColor="White" 
+                    Background="Blue" />
+        <Label Text="FlexLayout" 
+                    TextColor="White" 
+                    Background="Red" />
+        <Label Text="FlexLayout" 
+                    TextColor="White" 
+                    Background="Green" />
+        <Label Text="FlexLayout" 
+                    TextColor="White" 
+                    Background="Blue" />
+    </FlexLayout>
+
+</ContentPage>
