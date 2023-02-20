@@ -23,9 +23,9 @@
 
         private async void btn1_Tapped(object sender, EventArgs e)
         {
-            btn1.IsInProgress= true;
-            await Task.Delay(1000);
-            btn1.IsInProgress = false;
+            btn1.IsInProgress= true; // Activity Indicator
+            await Task.Delay(5000); // Some Long Running Process
+            btn1.IsInProgress = false; // Complete the Process and hide the Indicator
         }
     }
 }

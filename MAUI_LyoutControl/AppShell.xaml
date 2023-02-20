@@ -24,4 +24,11 @@
         </Tab>
     </FlyoutItem>
 
+    <FlyoutItem Title="Dogs"
+                Icon="dog.png">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate local:MainPage_FlexLayout}"/>
+        </Tab>
+    </FlyoutItem>
+
 </Shell>

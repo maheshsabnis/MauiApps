@@ -11,40 +11,8 @@
     Wrap="NoWrap"|"Wrap"|"Reverse"
     -->
 
-    <!--<FlexLayout JustifyContent="Start" AlignContent="Start"
-                 Direction="Column">
-        <Label Text="FlexLayout" 
-                    TextColor="White" 
-                    Background="Red" />
-        <Label Text="FlexLayout" 
-                    TextColor="White" 
-                    Background="Green" />
-        <Label Text="FlexLayout" 
-                    TextColor="White" 
-                    Background="Blue" />
-    </FlexLayout>-->
-    
-    
-    <!--USing Wrap-->
-    <FlexLayout Wrap="Reverse" WidthRequest="300">
-        <Label Text="FlexLayout" 
-                    TextColor="White" 
-                    Background="Red" />
-        <Label Text="FlexLayout" 
-                    TextColor="White" 
-                    Background="Green" />
-        <Label Text="FlexLayout" 
-                    TextColor="White" 
-                    Background="Blue" />
-        <Label Text="FlexLayout" 
-                    TextColor="White" 
-                    Background="Red" />
-        <Label Text="FlexLayout" 
-                    TextColor="White" 
-                    Background="Green" />
-        <Label Text="FlexLayout" 
-                    TextColor="White" 
-                    Background="Blue" />
+    <FlexLayout JustifyContent="Center" AlignContent="End"
+                 Direction="RowReverse">
         <Label Text="FlexLayout" 
                     TextColor="White" 
                     Background="Red" />
@@ -55,5 +23,37 @@
                     TextColor="White" 
                     Background="Blue" />
     </FlexLayout>
+    
+    
+    <!--USing Wrap-->
+    <!--<FlexLayout Wrap="Wrap" WidthRequest="300">
+        <Label Text="FlexLayout" 
+                    TextColor="White" 
+                    Background="Red" />
+        <Label Text="FlexLayout" 
+                    TextColor="White" 
+                    Background="Green" />
+        <Label Text="FlexLayout" 
+                    TextColor="White" 
+                    Background="Blue" />
+        <Label Text="FlexLayout" 
+                    TextColor="White" 
+                    Background="Red" />
+        <Label Text="FlexLayout" 
+                    TextColor="White" 
+                    Background="Green" />
+        <Label Text="FlexLayout" 
+                    TextColor="White" 
+                    Background="Blue" />
+        <Label Text="FlexLayout" 
+                    TextColor="White" 
+                    Background="Red" />
+        <Label Text="FlexLayout" 
+                    TextColor="White" 
+                    Background="Green" />
+        <Label Text="FlexLayout" 
+                    TextColor="White" 
+                    Background="Blue" />
+    </FlexLayout>-->
 
 </ContentPage>
